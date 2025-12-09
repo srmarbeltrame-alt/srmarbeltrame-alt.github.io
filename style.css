@@ -154,30 +154,30 @@ footer p {
 }
 
 /* ============================
-   PÁGINA SOBRE – FOTO + TEXTO (VERSÃO CORRETA)
+   PÁGINA SOBRE – FOTO + TEXTO
    ============================ */
 
 .sobre-container {
     display: flex;
-    align-items: flex-start;     /* alinha pelo topo — versão original */
+    align-items: center;          /* centraliza texto x foto */
     justify-content: space-between;
-    gap: 40px;
+    gap: 48px;
     max-width: 1100px;
     margin: 20px auto;
 }
 
 .sobre-foto img {
-    width: 220px;                /* TAMANHO CORRETO NO DESKTOP */
+    width: 320px;                 /* >>> TAMANHO MAIOR NO DESKTOP <<< */
     max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.13);
+    border-radius: 10px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.18);
     object-fit: cover;
 }
 
 .sobre-texto {
-    max-width: 600px;
+    max-width: 640px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 /* ============================
@@ -278,7 +278,7 @@ footer p {
     }
 
     .sobre-foto img {
-        width: 180px;            /* tamanho apenas para celular */
+        width: 180px;             /* tamanho adequado para celular */
     }
 
     .whatsapp-float {
