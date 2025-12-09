@@ -53,41 +53,43 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 100px 10% 70px 10%;
+    padding: 60px 10% 35px 10%;  /* antes 100px / 70px */
     background-color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 36px;
     color: #0b132b;
     margin-bottom: 8px;
 }
 
 .hero p {
-    font-size: 19px;
+    font-size: 18px;
     color: #444444;
     margin-top: 0;
 }
 
 /* ============================
-   SEÇÕES INTERNAS
+   CONTAINER CENTRAL DAS SEÇÕES
    ============================ */
 
 .section {
-    padding: 60px 14%;
+    padding: 30px 14%;              /* antes 60px */
     background-color: #f8f7f5;
+    max-width: 980px;               /* conteúdo não fica “perdido” na tela grande */
+    margin: 0 auto 20px auto;       /* centraliza e diminui espaço entre blocos */
 }
 
 .section h2 {
     color: #0b132b;
-    font-size: 30px;
-    margin-bottom: 16px;
+    font-size: 26px;
+    margin-bottom: 12px;
 }
 
 .section h3 {
     color: #273469;
-    font-size: 22px;
-    margin-top: 26px;
+    font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -96,17 +98,15 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-/* ============================
-   LISTAS
-   ============================ */
+/* LISTAS */
 
 .section ul {
     padding-left: 18px;
 }
 
 .section ul li {
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 8px;
+    font-size: 17px;
 }
 
 /* ============================
@@ -116,12 +116,12 @@ nav a:hover {
 .btn {
     background-color: #d4af37;
     color: #ffffff;
-    padding: 12px 26px;
+    padding: 10px 22px;
     border-radius: 4px;
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 18px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
 }
@@ -138,8 +138,8 @@ footer {
     background: #0b132b;
     color: #ffffff;
     text-align: center;
-    padding: 28px 8%;
-    margin-top: 40px;
+    padding: 18px 8%;
+    margin-top: 10px;    /* antes 40px */
     font-size: 14px;
 }
 
@@ -156,7 +156,7 @@ footer p {
 }
 
 /* ============================
-   PAGINA SOBRE – FOTO + TEXTO
+   PÁGINA SOBRE – FOTO + TEXTO
    ============================ */
 
 .sobre-container {
@@ -237,7 +237,7 @@ footer p {
 
     /* HERO */
     .hero {
-        padding: 70px 8% 50px 8%;
+        padding: 40px 8% 30px 8%;
     }
 
     .hero img {
@@ -260,9 +260,10 @@ footer p {
 
     /* SEÇÕES */
     .section {
-        padding: 0 8% 32px 8%;
-        font-size: 17px;
-        line-height: 1.55;
+        padding: 20px 8%;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     .section h2 {
@@ -270,7 +271,7 @@ footer p {
     }
 
     .section ul li {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* SOBRE – MOBILE */
@@ -296,9 +297,7 @@ footer p {
 
     /* RODAPÉ */
     footer {
-        text-align: center;
-        font-size: 15px;
-        line-height: 1.4;
-        padding: 16px 6%;
+        font-size: 13px;
+        padding: 14px 6%;
     }
 }
