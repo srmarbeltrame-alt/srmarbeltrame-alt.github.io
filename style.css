@@ -19,7 +19,9 @@ a {
     color: inherit;
 }
 
-/* Cabeçalho */
+/* ============================
+   CABEÇALHO
+   ============================ */
 
 header {
     background: #0b132b;
@@ -45,7 +47,9 @@ nav a:hover {
     color: #d4af37;
 }
 
-/* Seção de destaque */
+/* ============================
+   HERO SECTION
+   ============================ */
 
 .hero {
     text-align: center;
@@ -65,7 +69,9 @@ nav a:hover {
     margin-top: 0;
 }
 
-/* Seções internas */
+/* ============================
+   SEÇÕES INTERNAS
+   ============================ */
 
 .section {
     padding: 60px 14%;
@@ -90,7 +96,22 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
-/* Botões */
+/* ============================
+   LISTAS
+   ============================ */
+
+.section ul {
+    padding-left: 18px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* ============================
+   BOTÕES
+   ============================ */
 
 .btn {
     background-color: #d4af37;
@@ -109,7 +130,9 @@ nav a:hover {
     background-color: #b8922b;
 }
 
-/* Rodapé */
+/* ============================
+   RODAPÉ
+   ============================ */
 
 footer {
     background: #0b132b;
@@ -124,30 +147,32 @@ footer p {
     margin: 4px 0;
 }
 
-/* Contato */
+/* ============================
+   CONTATO
+   ============================ */
 
 .contact-data p {
     margin: 4px 0;
 }
 
 /* ============================
-   SOBRE – FOTO + TEXTO
+   PAGINA SOBRE – FOTO + TEXTO
    ============================ */
 
 .sobre-container {
     display: flex;
-    align-items: flex-start;      /* mantém texto e imagem alinhados pelo topo */
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: nowrap;            /* impede quebra que jogava a foto para cima */
+    flex-wrap: nowrap;
     margin-top: 10px;
 }
 
 .sobre-foto img {
-    width: 220px;                 /* reduzido para harmonizar com layout */
+    width: 220px;
     max-width: 100%;
-    border-radius: 8px;           /* suaviza o canto */
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.13); /* sombra mais elegante */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.13);
 }
 
 .sobre-texto {
@@ -157,7 +182,7 @@ footer p {
 }
 
 /* ============================
-   Botão flutuante de WhatsApp
+   BOTÃO FLUTUANTE WHATSAPP
    ============================ */
 
 .whatsapp-float {
@@ -182,58 +207,16 @@ footer p {
 }
 
 /* ============================
-   Responsivo
+   RESPONSIVIDADE – MOBILE
    ============================ */
 
 @media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 4px 10px 4px 0;
-    }
-
-    .hero {
-        padding: 70px 8% 50px 8%;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .section {
-        padding: 40px 8%;
-    }
-
-    /* Sobre – versão mobile */
-    .sobre-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-}
-/* ============================
-   AJUSTES RESPONSIVOS MOBILE
-   ============================ */
-
-@media (max-width: 768px) {
-
-    /* Ajusta o header */
+    /* HEADER */
     header {
         padding: 12px 5%;
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -242,25 +225,32 @@ footer p {
         margin-bottom: 10px;
     }
 
+    nav {
+        margin-top: 10px;
+    }
+
     nav a {
         display: inline-block;
         margin: 6px 12px;
         font-size: 16px;
     }
 
-    /* HERO SECTION */
+    /* HERO */
+    .hero {
+        padding: 70px 8% 50px 8%;
+    }
+
     .hero img {
         height: 120px !important;
     }
 
     .hero h1 {
-        font-size: 22px;
-        margin-top: 10px;
+        font-size: 24px;
+        line-height: 1.2;
     }
 
     .hero p {
         font-size: 16px;
-        margin-bottom: 16px;
     }
 
     .btn {
@@ -270,29 +260,38 @@ footer p {
 
     /* SEÇÕES */
     .section {
-        padding: 0 8%;
-        margin-bottom: 32px;
+        padding: 0 8% 32px 8%;
         font-size: 17px;
         line-height: 1.55;
     }
 
     .section h2 {
         font-size: 20px;
-        margin-bottom: 12px;
     }
 
     .section ul li {
-        margin-bottom: 8px;
         font-size: 16px;
     }
 
-    /* BOTÃO WHATSAPP FLUTUANTE */
+    /* SOBRE – MOBILE */
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sobre-foto img {
+        width: 180px;
+    }
+
+    /* WHATSAPP FLOAT */
     .whatsapp-float {
         font-size: 26px !important;
         width: 52px;
         height: 52px;
         bottom: 18px;
         right: 18px;
+        line-height: 52px;
     }
 
     /* RODAPÉ */
