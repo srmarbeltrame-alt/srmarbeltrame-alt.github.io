@@ -159,15 +159,16 @@ footer p {
 
 .sobre-container {
     display: flex;
-    align-items: center;          /* centraliza texto x foto */
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 48px;
-    max-width: 1100px;
-    margin: 20px auto;
+    gap: 60px;
+    max-width: 1400px;     /* AQUI ESTÁ A CORREÇÃO PRINCIPAL */
+    margin: 40px auto;
+    padding: 0 40px;
 }
 
 .sobre-foto img {
-    width: 320px;                 /* >>> TAMANHO MAIOR NO DESKTOP <<< */
+    width: 220px;          /* TAMANHO ORIGINAL FIXO */
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0px 6px 18px rgba(0,0,0,0.18);
@@ -175,7 +176,7 @@ footer p {
 }
 
 .sobre-texto {
-    max-width: 640px;
+    max-width: 650px;
     font-size: 18px;
     line-height: 1.65;
 }
@@ -270,15 +271,16 @@ footer p {
         font-size: 15px;
     }
 
-    /* SOBRE – MOBILE */
     .sobre-container {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     .sobre-foto img {
-        width: 180px;             /* tamanho adequado para celular */
+        width: 180px; 
     }
 
     .whatsapp-float {
