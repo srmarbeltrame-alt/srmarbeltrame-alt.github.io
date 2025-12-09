@@ -154,30 +154,30 @@ footer p {
 }
 
 /* ============================
-   PÁGINA SOBRE – FOTO + TEXTO (AJUSTADO)
+   PÁGINA SOBRE – FOTO + TEXTO (VERSÃO CORRETA)
    ============================ */
 
 .sobre-container {
     display: flex;
-    align-items: center;        /* Centraliza verticalmente com o texto */
+    align-items: flex-start;     /* alinha pelo topo — versão original */
     justify-content: space-between;
-    gap: 50px;
+    gap: 40px;
     max-width: 1100px;
     margin: 20px auto;
 }
 
 .sobre-foto img {
-    width: 340px;               /* antes 220px — agora bem maior */
+    width: 220px;                /* TAMANHO CORRETO NO DESKTOP */
     max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.18); /* sombra mais elegante */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.13);
     object-fit: cover;
 }
 
 .sobre-texto {
-    max-width: 640px;
+    max-width: 600px;
     font-size: 18px;
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 /* ============================
@@ -270,6 +270,7 @@ footer p {
         font-size: 15px;
     }
 
+    /* SOBRE – MOBILE */
     .sobre-container {
         flex-direction: column;
         text-align: center;
@@ -277,7 +278,7 @@ footer p {
     }
 
     .sobre-foto img {
-        width: 180px;            /* mantém tamanho adequado no mobile */
+        width: 180px;            /* tamanho apenas para celular */
     }
 
     .whatsapp-float {
