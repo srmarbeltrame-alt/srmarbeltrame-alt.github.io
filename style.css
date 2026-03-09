@@ -130,24 +130,36 @@ footer p {
     margin: 4px 0;
 }
 
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 420px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+}
+
 /* ============================
    SOBRE – FOTO + TEXTO
    ============================ */
 
 .sobre-container {
     display: flex;
-    align-items: flex-start;      /* mantém texto e imagem alinhados pelo topo */
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: nowrap;            /* impede quebra que jogava a foto para cima */
+    flex-wrap: nowrap;
     margin-top: 10px;
 }
 
 .sobre-foto img {
-    width: 220px;                 /* reduzido para harmonizar com layout */
+    width: 220px;
     max-width: 100%;
-    border-radius: 8px;           /* suaviza o canto */
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.13); /* sombra mais elegante */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.13);
 }
 
 .sobre-texto {
@@ -217,20 +229,19 @@ footer p {
         padding: 40px 8%;
     }
 
-    /* Sobre – versão mobile */
     .sobre-container {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
 }
+
 /* ============================
    AJUSTES RESPONSIVOS MOBILE
    ============================ */
 
 @media (max-width: 768px) {
 
-    /* Ajusta o header */
     header {
         padding: 12px 5%;
         flex-direction: column;
@@ -248,7 +259,6 @@ footer p {
         font-size: 16px;
     }
 
-    /* HERO SECTION */
     .hero img {
         height: 120px !important;
     }
@@ -268,9 +278,8 @@ footer p {
         font-size: 16px;
     }
 
-    /* SEÇÕES */
     .section {
-        padding: 0 8%;
+        padding: 40px 8%;
         margin-bottom: 32px;
         font-size: 17px;
         line-height: 1.55;
@@ -286,7 +295,15 @@ footer p {
         font-size: 16px;
     }
 
-    /* BOTÃO WHATSAPP FLUTUANTE */
+    .map-container {
+        margin-top: 32px;
+    }
+
+    .map-container iframe {
+        height: 300px;
+        border-radius: 6px;
+    }
+
     .whatsapp-float {
         font-size: 26px !important;
         width: 52px;
@@ -295,7 +312,6 @@ footer p {
         right: 18px;
     }
 
-    /* RODAPÉ */
     footer {
         text-align: center;
         font-size: 15px;
