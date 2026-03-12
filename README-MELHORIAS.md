@@ -22,3 +22,11 @@ Atualização adicional consolidada:
 - ajuste de CSS do header para melhor encaixe da logomarca em desktop e mobile.
 
 Importante: este pacote não substitui a pasta `assets/img`. Mantenha no repositório a sua pasta atual, que já contém `logo2.png`.
+
+
+Atualização visual adicional com base nas cores da marca:
+- header em azul-marinho para dar contraste à logomarca branca;
+- redução do excesso de branco com fundo bege-claro e seções em tons quentes suaves;
+- aplicação das cores #000121, #BF8932 e #E8C266 no sistema visual do site;
+- rodapé escuro alinhado ao cabeçalho;
+- ajustes finos de hover, bordas e CTA para maior sofisticação visual.
