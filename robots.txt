@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://marcelobeltrameadv.com.br/sitemap.xml

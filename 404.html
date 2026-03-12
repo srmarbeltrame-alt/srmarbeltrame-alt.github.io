@@ -1,19 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Página não encontrada – 404</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f172a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+  <title>Página não encontrada – 404</title>
+  <meta name="robots" content="noindex">
 </head>
 <body>
 
-<section class="hero">
-    <h1>404</h1>
-    <p>Página não encontrada.</p>
-    <a class="btn" href="index.html">Voltar ao início</a>
-</section>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Página inicial Marcelo Beltrame Advocacia">
+      <span class="brand-mark">MB</span>
+      <span class="brand-text">
+        <strong>Marcelo Beltrame</strong>
+        <small>Advocacia</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="atuacao.html">Atuação</a></li>
+        <li><a href="blog.html">Artigos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" class="page-main error-page">
+  <section class="section">
+    <div class="container narrow error-box card">
+      <p class="eyebrow">Erro 404</p>
+      <h1>Página não encontrada.</h1>
+      <p>O conteúdo que você tentou acessar pode ter sido removido, alterado ou digitado incorretamente.</p>
+      <a class="btn btn-primary" href="index.html">Voltar ao início</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2 class="footer-title">Marcelo Beltrame Advocacia</h2>
+      <p>Atuação jurídica estratégica, técnica e personalizada em Ivaiporã/PR e região.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Contato</h2>
+      <ul class="footer-list">
+        <li><a href="https://wa.me/5543984171793" target="_blank" rel="noopener">WhatsApp: (43) 98417-1793</a></li>
+        <li><a href="mailto:marcelobeltrameadv@outlook.com">marcelobeltrameadv@outlook.com</a></li>
+        <li>Avenida Maranhão, nº 1174, Centro, Ivaiporã/PR</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Institucional</h2>
+      <ul class="footer-list">
+        <li><a href="sobre.html">Sobre o advogado</a></li>
+        <li><a href="atuacao.html">Áreas de atuação</a></li>
+        <li><a href="politica-privacidade.html">Política de privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-current-year></span> Marcelo Beltrame – Advogado – OAB/PR 113541</p>
+  </div>
+</footer>
+<a class="whatsapp-float" href="https://wa.me/5543984171793" target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">WhatsApp</a>
 
 </body>
 </html>
