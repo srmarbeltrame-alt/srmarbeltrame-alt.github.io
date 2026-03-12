@@ -13,3 +13,12 @@
 
 ## Observação
 Como os nomes exatos dos arquivos de imagem da pasta `assets/img` não estavam acessíveis nesta sessão, o pacote foi estruturado para funcionar sem depender dessas imagens. Se desejar, é possível recolocar a logomarca original facilmente no bloco `.brand` do cabeçalho.
+
+
+Atualização adicional consolidada:
+- substituição do monograma textual do cabeçalho pela imagem `assets/img/logo2.png`;
+- inclusão de favicon apontando para `assets/img/logo2.png`;
+- ajuste de SEO social (`og:image`) e do schema para a logomarca;
+- ajuste de CSS do header para melhor encaixe da logomarca em desktop e mobile.
+
+Importante: este pacote não substitui a pasta `assets/img`. Mantenha no repositório a sua pasta atual, que já contém `logo2.png`.
